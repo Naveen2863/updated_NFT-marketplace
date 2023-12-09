@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(180deg, #1F1F1F, #000000); /* Dark gradient background */
+            color: #FFFFFF;
+        }
+
+        header {
+            background-color: #282828; /* Darker header color */
+            padding: 20px;
+            text-align: left; /* Align heading and logo to the left */
+        }
+
+        h1, p {
+            margin: 0;
+        }
+
+        section {
+            padding: 20px; /* Reduce padding for a more compact layout */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px; /* Increase distance between cards and footer */
+        }
+
+        nav {
+            background-color: #282828; /* Darker nav bar color */
+            border-radius: 10px; /* Rounded corners */
+            padding: 10px;
+            margin-bottom: 30px; /* Increase distance between cards and footer */
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 15px; /* Reduce padding for a more compact layout */
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #3E4095; /* Vibrant button color */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            color: #FFFFFF;
+            text-decoration: none;
+            background-color: #3E4095; /* Vibrant button color */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2E3095; /* Darker vibrant button color on hover */
+        }
+
+        .card {
+            background-color: #2C2C2C; /* Darker card color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        h2, p {
+            color: #FFFFFF; /* Text color for better readability */
+        }
+
+        footer {
+            background: linear-gradient(180deg, #282828, #1F1F1F); /* Dark gradient background */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer img {
+            max-width: 30px;
+            margin: 0 10px;
+        }
+
+        nav {
+            background-color: #282828; /* Darker nav bar color */
+            border-radius: 10px; /* Rounded corners */
+            padding: 10px;
+            margin-bottom: 30px; /* Increase distance between cards and footer */
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-bar {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .hidden-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>NFT Marketplace</h1>
+        <p>Explore and collect unique digital assets</p>
+    </header>
+
+    <nav>
+        <div class="search-bar">
+            <form>
+                <label for="searchInput">Search by title:</label>
+                <input type="text" class="search-input" id="searchInput" placeholder="Search by title..." value="search query">
+            </form>
+        </div>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+        <a href="#">SignUp</a>
+    </nav>
+
+    <section>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="NFT Image">
+            <h2>CryptoArt1</h2>
+            <p>Description of the NFT goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="NFT Image">
+            <h2>CryptoArt2</h2>
+            <p>Description of the NFT goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="NFT Image">
+            <h2>CryptoArt3</h2>
+            <p>Description of the NFT goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="NFT Image">
+            <h2>CryptoArt4</h2>
+            <p>Description of the NFT goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="NFT Image">
+            <h2>CryptoArt5</h2>
+            <p>Description of the NFT goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="NFT Image">
+            <h2>CryptoArt6</h2>
+            <p>Description of the NFT goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <!-- Add more cards as needed -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 NFT Marketplace. All rights reserved.</p>
+        <p>For inquiries, contact us at <a href="mailto:info@example.com">info@example.com</a></p>
+        <img src="https://via.placeholder.com/50" alt="Company Logo">
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const cards = document.querySelectorAll('.card');
+
+        searchInput.addEventListener('input', filterCards);
+
+        function filterCards() {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            cards.forEach(card => {
+                const title = card.dataset.title.toLowerCase();
+
+                if (title.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
